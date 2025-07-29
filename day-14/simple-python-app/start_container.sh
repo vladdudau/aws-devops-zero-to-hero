@@ -2,8 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull vladdudau0403/simple-python-app
 
 # Run the Docker image as a container
-echo 
-echo "Finish stop process"
+docker run -d -p 5000:5000 vladdudau0403/simple-python-app
